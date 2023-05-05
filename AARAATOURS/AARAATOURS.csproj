@@ -1,0 +1,430 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C311170-360E-465F-AB69-0B9DDEA6CDB3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AARAATOURS</RootNamespace>
+    <AssemblyName>AARAATOURS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMINMASTER\css\bootstrap.css" />
+    <Content Include="ADMINMASTER\css\chocolat.css" />
+    <Content Include="ADMINMASTER\css\fontawesome-all.min.css" />
+    <Content Include="ADMINMASTER\css\hover.css" />
+    <Content Include="ADMINMASTER\css\mislider-custom.css" />
+    <Content Include="ADMINMASTER\css\mislider.css" />
+    <Content Include="ADMINMASTER\css\style.css" />
+    <Content Include="ADMINMASTER\images\1.jpg" />
+    <Content Include="ADMINMASTER\images\2.jpg" />
+    <Content Include="ADMINMASTER\images\add_videos.PNG" />
+    <Content Include="ADMINMASTER\images\Admin_pic.PNG" />
+    <Content Include="ADMINMASTER\images\bg.jpg" />
+    <Content Include="ADMINMASTER\images\bg1.jpg" />
+    <Content Include="ADMINMASTER\images\changepass.PNG" />
+    <Content Include="ADMINMASTER\images\close.png" />
+    <Content Include="ADMINMASTER\images\g1.jpg" />
+    <Content Include="ADMINMASTER\images\g2.jpg" />
+    <Content Include="ADMINMASTER\images\g3.jpg" />
+    <Content Include="ADMINMASTER\images\g4.jpg" />
+    <Content Include="ADMINMASTER\images\g5.jpg" />
+    <Content Include="ADMINMASTER\images\g6.jpg" />
+    <Content Include="ADMINMASTER\images\g7.jpg" />
+    <Content Include="ADMINMASTER\images\g8.jpg" />
+    <Content Include="ADMINMASTER\images\g9.jpg" />
+    <Content Include="ADMINMASTER\images\left.png" />
+    <Content Include="ADMINMASTER\images\logo_aaraa.PNG" />
+    <Content Include="ADMINMASTER\images\move-top.png" />
+    <Content Include="ADMINMASTER\images\p1.jpg" />
+    <Content Include="ADMINMASTER\images\p2.jpg" />
+    <Content Include="ADMINMASTER\images\p3.jpg" />
+    <Content Include="ADMINMASTER\images\p4.jpg" />
+    <Content Include="ADMINMASTER\images\right.png" />
+    <Content Include="ADMINMASTER\images\t1.jpg" />
+    <Content Include="ADMINMASTER\images\t2.jpg" />
+    <Content Include="ADMINMASTER\images\t3.jpg" />
+    <Content Include="ADMINMASTER\images\te1.jpg" />
+    <Content Include="ADMINMASTER\images\te2.jpg" />
+    <Content Include="ADMINMASTER\images\te3.jpg" />
+    <Content Include="ADMINMASTER\images\te4.jpg" />
+    <Content Include="ADMINMASTER\images\te5.jpg" />
+    <Content Include="ADMINMASTER\images\te6.jpg" />
+    <Content Include="ADMINMASTER\js\bootstrap.js" />
+    <Content Include="ADMINMASTER\js\counter.js" />
+    <Content Include="ADMINMASTER\js\easing.js" />
+    <Content Include="ADMINMASTER\js\jquery-2.2.3.min.js" />
+    <Content Include="ADMINMASTER\js\jquery.chocolat.js" />
+    <Content Include="ADMINMASTER\js\mislider.js" />
+    <Content Include="ADMINMASTER\js\move-top.js" />
+    <Content Include="ADMINMASTER\js\SmoothScroll.min.js" />
+    <Content Include="ADMINMASTER\Home.aspx" />
+    <Content Include="ADMINMASTER\Userdata.aspx" />
+    <Content Include="ADMINMASTER\Bookingdata.aspx" />
+    <Content Include="ADMINMASTER\Feedback.aspx" />
+    <Content Include="ADMINMASTER\ChangePassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="USERMASTER\css\bootstrap.css" />
+    <Content Include="USERMASTER\css\chocolat.css" />
+    <Content Include="USERMASTER\css\fontawesome-all.min.css" />
+    <Content Include="USERMASTER\css\hover.css" />
+    <Content Include="USERMASTER\css\mislider-custom.css" />
+    <Content Include="USERMASTER\css\mislider.css" />
+    <Content Include="USERMASTER\css\style.css" />
+    <Content Include="USERMASTER\images\1.jpg" />
+    <Content Include="USERMASTER\images\2.jpg" />
+    <Content Include="USERMASTER\images\bg.jpg" />
+    <Content Include="USERMASTER\images\bg1.jpg" />
+    <Content Include="USERMASTER\images\bookingnow.PNG" />
+    <Content Include="USERMASTER\images\bora_bora_french.jpg" />
+    <Content Include="USERMASTER\images\changepass.PNG" />
+    <Content Include="USERMASTER\images\close.png" />
+    <Content Include="USERMASTER\images\g1.jpg" />
+    <Content Include="USERMASTER\images\g2.jpg" />
+    <Content Include="USERMASTER\images\g3.jpg" />
+    <Content Include="USERMASTER\images\g4.jpg" />
+    <Content Include="USERMASTER\images\g5.jpg" />
+    <Content Include="USERMASTER\images\g6.jpg" />
+    <Content Include="USERMASTER\images\g7.jpg" />
+    <Content Include="USERMASTER\images\g8.jpg" />
+    <Content Include="USERMASTER\images\g9.jpg" />
+    <Content Include="USERMASTER\images\Glacier_us.jpg" />
+    <Content Include="USERMASTER\images\left.png" />
+    <Content Include="USERMASTER\images\logo_aaraa.PNG" />
+    <Content Include="USERMASTER\images\london.jpg" />
+    <Content Include="USERMASTER\images\Mahu_hawaiian.jpg" />
+    <Content Include="USERMASTER\images\move-top.png" />
+    <Content Include="USERMASTER\images\p1.jpg" />
+    <Content Include="USERMASTER\images\p2.jpg" />
+    <Content Include="USERMASTER\images\p3.jpg" />
+    <Content Include="USERMASTER\images\p4.jpg" />
+    <Content Include="USERMASTER\images\phuket_thailand.jpg" />
+    <Content Include="USERMASTER\images\right.png" />
+    <Content Include="USERMASTER\images\rome_italy.jpg" />
+    <Content Include="USERMASTER\images\sin.PNG" />
+    <Content Include="USERMASTER\images\snup2.png" />
+    <Content Include="USERMASTER\images\southisland_newzealand.jpg" />
+    <Content Include="USERMASTER\images\t1.jpg" />
+    <Content Include="USERMASTER\images\t2.jpg" />
+    <Content Include="USERMASTER\images\t3.jpg" />
+    <Content Include="USERMASTER\images\tahiti.jpg" />
+    <Content Include="USERMASTER\images\te1.jpg" />
+    <Content Include="USERMASTER\images\te2.jpg" />
+    <Content Include="USERMASTER\images\te3.jpg" />
+    <Content Include="USERMASTER\images\te4.jpg" />
+    <Content Include="USERMASTER\images\te5.jpg" />
+    <Content Include="USERMASTER\images\te6.jpg" />
+    <Content Include="USERMASTER\images\tokyo_japan.jpg" />
+    <Content Include="USERMASTER\js\bootstrap.js" />
+    <Content Include="USERMASTER\js\counter.js" />
+    <Content Include="USERMASTER\js\easing.js" />
+    <Content Include="USERMASTER\js\jquery-2.2.3.min.js" />
+    <Content Include="USERMASTER\js\jquery.chocolat.js" />
+    <Content Include="USERMASTER\js\mislider.js" />
+    <Content Include="USERMASTER\js\move-top.js" />
+    <Content Include="USERMASTER\js\SmoothScroll.min.js" />
+    <Content Include="USERMASTER\Home.aspx" />
+    <Content Include="USERMASTER\About.aspx" />
+    <Content Include="USERMASTER\Gallery.aspx" />
+    <Content Include="USERMASTER\ToursBooking.aspx" />
+    <Content Include="USERMASTER\MainBooking.aspx" />
+    <Content Include="USERMASTER\Login.aspx" />
+    <Content Include="USERMASTER\Registration.aspx" />
+    <Content Include="USERMASTER\Changepass.aspx" />
+    <Content Include="USERMASTER\Contact.aspx" />
+    <Content Include="USERMASTER\Videos.aspx" />
+    <Content Include="Videofile\bora_bora_french.mp4" />
+    <Content Include="Videofile\Glacier.mp4" />
+    <Content Include="Videofile\London_england.mp4" />
+    <Content Include="Videofile\maui_hawaiian_usa.mp4" />
+    <Content Include="Videofile\paris_france.mp4" />
+    <Content Include="Videofile\phuket_thailand.mp4" />
+    <Content Include="Videofile\Rome_italy.mp4" />
+    <Content Include="Videofile\South_ISland_newzealand.mp4" />
+    <Content Include="Videofile\tahiti_french.mp4" />
+    <Content Include="Videofile\tokyo_japan.mp4" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINMASTER\Amaster.Master.cs">
+      <DependentUpon>Amaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINMASTER\Amaster.Master.designer.cs">
+      <DependentUpon>Amaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINMASTER\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINMASTER\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINMASTER\Userdata.aspx.cs">
+      <DependentUpon>Userdata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINMASTER\Userdata.aspx.designer.cs">
+      <DependentUpon>Userdata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINMASTER\Bookingdata.aspx.cs">
+      <DependentUpon>Bookingdata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINMASTER\Bookingdata.aspx.designer.cs">
+      <DependentUpon>Bookingdata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINMASTER\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINMASTER\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINMASTER\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINMASTER\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="USERMASTER\umaster.Master.cs">
+      <DependentUpon>umaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\umaster.Master.designer.cs">
+      <DependentUpon>umaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\ToursBooking.aspx.cs">
+      <DependentUpon>ToursBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\ToursBooking.aspx.designer.cs">
+      <DependentUpon>ToursBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\MainBooking.aspx.cs">
+      <DependentUpon>MainBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\MainBooking.aspx.designer.cs">
+      <DependentUpon>MainBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\Changepass.aspx.cs">
+      <DependentUpon>Changepass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\Changepass.aspx.designer.cs">
+      <DependentUpon>Changepass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USERMASTER\Videos.aspx.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERMASTER\Videos.aspx.designer.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMINMASTER\Amaster.Master" />
+    <Content Include="ADMINMASTER\webfonts\fa-brands-400.woff" />
+    <Content Include="ADMINMASTER\webfonts\fa-brands-400.woff2" />
+    <Content Include="ADMINMASTER\webfonts\fa-regular-400.eot" />
+    <Content Include="ADMINMASTER\webfonts\fa-regular-400.ttf" />
+    <Content Include="ADMINMASTER\webfonts\fa-regular-400.woff" />
+    <Content Include="ADMINMASTER\webfonts\fa-regular-400.woff2" />
+    <Content Include="ADMINMASTER\webfonts\fa-solid-900.eot" />
+    <Content Include="ADMINMASTER\webfonts\fa-solid-900.ttf" />
+    <Content Include="ADMINMASTER\webfonts\fa-solid-900.woff" />
+    <Content Include="ADMINMASTER\webfonts\fa-solid-900.woff2" />
+    <None Include="packages.config" />
+    <Content Include="USERMASTER\umaster.Master" />
+    <Content Include="USERMASTER\webfonts\fa-brands-400.woff" />
+    <Content Include="USERMASTER\webfonts\fa-brands-400.woff2" />
+    <Content Include="USERMASTER\webfonts\fa-regular-400.eot" />
+    <Content Include="USERMASTER\webfonts\fa-regular-400.ttf" />
+    <Content Include="USERMASTER\webfonts\fa-regular-400.woff" />
+    <Content Include="USERMASTER\webfonts\fa-regular-400.woff2" />
+    <Content Include="USERMASTER\webfonts\fa-solid-900.eot" />
+    <Content Include="USERMASTER\webfonts\fa-solid-900.ttf" />
+    <Content Include="USERMASTER\webfonts\fa-solid-900.woff" />
+    <Content Include="USERMASTER\webfonts\fa-solid-900.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58640</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44340/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:58640/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
